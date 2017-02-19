@@ -1,5 +1,5 @@
 import os
-with open('names.txt', 'r') as fileNames:
+with open('names.txt', 'r', encoding="utf8") as fileNames:
     names = fileNames.read().splitlines()
     for ind, name in enumerate(names):
         old_name = str(ind + 1) + '.mp4'
